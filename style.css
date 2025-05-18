@@ -1,0 +1,241 @@
+/* === GLOBAL STYLES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* === HERO SECTION === */
+.hero {
+  padding: 6rem 1rem 4rem;
+  text-align: center;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  animation: fadeIn 1.2s ease-in;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #ff004f;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #aaa;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.rolling-text {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: roll 20s linear infinite;
+  color: #ff004f;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@keyframes roll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  background: #ff004f;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #ff3366;
+}
+
+/* === SECTION STYLES === */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 4rem 1.5rem;
+  animation: fadeInUp 1s ease;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ff004f;
+  border-left: 5px solid #ff004f;
+  padding-left: 0.8rem;
+}
+
+section p, section li {
+  color: #ccc;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+/* === SKILL TAGS === */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill-tags span {
+  background: #1f1f1f;
+  border: 1px solid #ff004f;
+  color: #ff004f;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.skill-tags span:hover {
+  background: #ff004f;
+  color: white;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #1a1a1a;
+  color: #777;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.contact-section {
+  background: #111;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ff004f;
+}
+
+.contact-section h2 span {
+  color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  background: #ff004f;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #e60047;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.contact-info a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}.hero-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(255, 0, 79, 0.2);
+}
+.hero-card h1 span {
+  background: linear-gradient(to right, #ff004f, #00bcd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
